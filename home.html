@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Actions</title>
+    <style>
+  /* Style the button container */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons */
+.button-container button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.button-container button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+/* Style the links */
+.button-container a {
+  text-decoration: none;
+  margin: 10px;
+  color: #337ab7;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.button-container a:hover {
+  color: #23527c;
+}
+
+/* Add some spacing between buttons and links */
+.button-container button + button,
+.button-container a + a {
+  margin-left: 10px;
+}
+
+/* Style the active button */
+.button-container button.active {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+
+/* Style the disabled button */
+.button-container button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="add-movie"><button>Add Movie</button></a>
+        <a href="fetch-all"><button>Fetch All Movies</button></a>
+        <a href="fetch-movie.html"><button>Fetch By Movie Name</button></a>
+    </div>
+</body>
+</html>
